@@ -50,16 +50,8 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  color: var(--text-light);
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.logo::before {
-  content: "🌊";
-  margin-right: 0.5rem;
-  font-size: 1.8rem;
+  width: 10%;
+  height: 10%;
 }
 
 .nav-menu {
@@ -95,4 +87,54 @@ nav {
 
 .nav-menu a:hover::after {
   width: 100%;
+}
+
+section {
+    padding: 6rem 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    min-height: 400px;
+}
+
+.section-text {
+    flex: 1;
+    margin-left: 2%;
+}
+
+.section-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+.section-image img {
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-image img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-gray);
+    font-weight: 400;
 }
