@@ -1,0 +1,1 @@
+# globalsolution01-2025
