@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -75,7 +74,6 @@ nav {
 }
 
 .nav-menu a::after {
-  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -90,105 +88,116 @@ nav {
 }
 
 section {
-    padding: 6rem 2rem;
-    max-width: 100%;
-    margin: 0 auto;
-    max-height: 1500px;
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 1500px;
 }
 
 .section-content {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    min-height: 400px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 10%;
 }
 
 .section-text {
-    flex: 1;
-    padding: 4%;
+  flex: 1;
 }
 
 .section-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    padding: 10%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
 }
 
 .section-image img {
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section-image img:hover {
-    transform: scale(1.05);
-    box-shadow: var(--shadow-hover);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-hover);
 }
 
 .imgTecSec {
-    width: 70%;
-    height: 70%;
+  width: 70%;
+  height: 70%;
 }
 
 .imgSolSec {
-    width: 90%;
-    height: 90%;
+  width: 90%;
+  height: 90%;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-    font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: var(--text-gray);
-    font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-gray);
+  font-weight: 400;
 }
 
 #problema {
-    background: var(--background-light);
-    margin-top: 80px;
+  background: var(--background-light);
+  margin-top: 80px;
 }
 
 #tecnologias {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: var(--text-light);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  color: var(--text-light);
 }
 
 #tecnologias h2,
 #tecnologias p {
-    color: var(--text-light);
+  color: var(--text-light);
 }
 
 #objetivos {
-      background: var(--background-light);
+  background: var(--background-light);
 }
 
 #publico {
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      color: var(--text-light);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  color: var(--text-light);
 }
 
 #publico h2,
 #publico p {
-      color: var(--text-light);
+  color: var(--text-light);
 }
 
 #beneficios {
-      background: var(--background-light);
+  background: var(--background-light);
 }
 
 #solucao {
-      background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
-      color: var(--text-light);
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--primary-color)
+  );
+  color: var(--text-light);
 }
 
 #solucao h2,
 #solucao p {
-      color: var(--text-light);
+  color: var(--text-light);
 }
+
