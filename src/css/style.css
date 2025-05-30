@@ -201,3 +201,14 @@ p {
   color: var(--text-light);
 }
 
+footer {
+  background: var(--background-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 4rem;
+}
+
+footer p {
+  color: var(--text-light);
+  font-size: medium;
+}
