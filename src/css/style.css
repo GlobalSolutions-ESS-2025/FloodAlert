@@ -93,6 +93,7 @@ section {
     padding: 6rem 2rem;
     max-width: 100%;
     margin: 0 auto;
+    max-height: 1500px;
 }
 
 .section-content {
@@ -104,7 +105,7 @@ section {
 
 .section-text {
     flex: 1;
-    margin-left: 2%;
+    padding: 4%;
 }
 
 .section-image {
@@ -125,6 +126,16 @@ section {
     box-shadow: var(--shadow-hover);
 }
 
+.imgTecSec {
+    width: 70%;
+    height: 70%;
+}
+
+.imgSolSec {
+    width: 90%;
+    height: 90%;
+}
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -137,4 +148,47 @@ p {
     margin-bottom: 1rem;
     color: var(--text-gray);
     font-weight: 400;
+}
+
+#problema {
+    background: var(--background-light);
+    margin-top: 80px;
+}
+
+#tecnologias {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--text-light);
+}
+
+#tecnologias h2,
+#tecnologias p {
+    color: var(--text-light);
+}
+
+#objetivos {
+      background: var(--background-light);
+}
+
+#publico {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      color: var(--text-light);
+}
+
+#publico h2,
+#publico p {
+      color: var(--text-light);
+}
+
+#beneficios {
+      background: var(--background-light);
+}
+
+#solucao {
+      background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+      color: var(--text-light);
+}
+
+#solucao h2,
+#solucao p {
+      color: var(--text-light);
 }
