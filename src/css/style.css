@@ -14,6 +14,7 @@
   --text-light: #ffffff;
   --background-light: #f8f9fa;
   --background-dark: #1e1e1e;
+  --background-normal: #0066cc;
   --border-color: #e0e0e0;
   --shadow: 0 4px 20px rgba(0, 102, 204, 0.1);
   --shadow-hover: 0 8px 30px rgba(0, 102, 204, 0.2);
@@ -27,11 +28,9 @@ body {
 }
 
 header {
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--secondary-color));
   position: fixed;
   top: 0;
   width: 100%;
@@ -91,6 +90,31 @@ nav {
 .nav-menu a:hover::after {
   width: 100%;
 }
+
+.botaoTema button {
+  width: 20%;
+  height: 15%;
+  font-size: 24px;
+  margin: 0 5px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#botao1 {
+  background-color: var(--background-dark);
+}
+
+#botao2 {
+  background-color: var(--background-light);
+}
+
+#botao3 {
+  background-color: var(--background-normal);
+}
+
+
+
 
 section {
   max-width: 100%;
@@ -159,11 +183,9 @@ p {
 }
 
 #tecnologias {
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--accent-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--accent-color));
   color: var(--text-light);
 }
 
@@ -177,11 +199,9 @@ p {
 }
 
 #publico {
-  background: linear-gradient(
-    135deg,
-    var(--secondary-color),
-    var(--primary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--secondary-color),
+      var(--primary-color));
   color: var(--text-light);
 }
 
@@ -195,11 +215,9 @@ p {
 }
 
 #solucao {
-  background: linear-gradient(
-    135deg,
-    var(--accent-color),
-    var(--primary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-color),
+      var(--primary-color));
   color: var(--text-light);
 }
 
@@ -258,5 +276,3 @@ footer {
   font-size: 0.9rem;
   color: var(--text-gray);
 }
-
-
