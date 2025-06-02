@@ -113,7 +113,10 @@ nav {
   background-color: var(--background-normal);
 }
 
-
+img {
+  width: 80%;
+  height: 80%;
+}
 
 
 section {
