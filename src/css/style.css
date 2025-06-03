@@ -16,6 +16,7 @@
   --background-dark: #1e1e1e;
   --background-normal: #0066cc;
   --border-color: #e0e0e0;
+  --text-personalizado: rgba(0, 123, 255, 0.1);
   --shadow: 0 4px 20px rgba(0, 102, 204, 0.1);
   --shadow-hover: 0 8px 30px rgba(0, 102, 204, 0.2);
 }
@@ -227,6 +228,81 @@ p {
 #solucao h2,
 #solucao p {
   color: var(--text-light);
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forms label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin-bottom: 8px;
+}
+
+.forms input[type="email"],
+.forms textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid var(--text-light);
+    border-radius: 8px;
+    background-color: var(--background-light);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.forms input[type="email"]:focus,
+.forms textarea:focus {
+    outline: none;
+    border-color: var(--background-normal);
+    box-shadow: 0 0 0 3px var(--text-personalizado);
+}
+
+.forms input::placeholder {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.forms textarea::placeholder {
+    color: var(--text-gray);
+    font-style: italic;
+}
+
+
+.forms button,
+.forms Button {
+    background-color: var(--background-normal);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.forms button:hover,
+.forms Button:hover {
+    background-color: var(--background-normal);
+    transform: translateY(-2px);
+}
+
+.forms button:active,
+.forms Button:active {
+    transform: translateY(0);
 }
 
 footer {
