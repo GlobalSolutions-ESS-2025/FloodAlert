@@ -29,9 +29,11 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   position: fixed;
   top: 0;
   width: 100%;
@@ -119,7 +121,6 @@ img {
   height: 80%;
 }
 
-
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -187,9 +188,11 @@ p {
 }
 
 #tecnologias {
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--accent-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
   color: var(--text-light);
 }
 
@@ -203,9 +206,11 @@ p {
 }
 
 #publico {
-  background: linear-gradient(135deg,
-      var(--secondary-color),
-      var(--primary-color));
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   color: var(--text-light);
 }
 
@@ -219,9 +224,11 @@ p {
 }
 
 #solucao {
-  background: linear-gradient(135deg,
-      var(--accent-color),
-      var(--primary-color));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--primary-color)
+  );
   color: var(--text-light);
 }
 
@@ -231,78 +238,77 @@ p {
 }
 
 form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .forms {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .forms label {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-gray);
-    margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-gray);
+  margin-bottom: 8px;
 }
 
 .forms input[type="email"],
 .forms textarea {
-    width: 100%;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: 2px solid var(--text-light);
-    border-radius: 8px;
-    background-color: var(--background-light);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid var(--text-light);
+  border-radius: 8px;
+  background-color: var(--background-light);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
 }
 
 .forms input[type="email"]:focus,
 .forms textarea:focus {
-    outline: none;
-    border-color: var(--background-normal);
-    box-shadow: 0 0 0 3px var(--text-personalizado);
+  outline: none;
+  border-color: var(--background-normal);
+  box-shadow: 0 0 0 3px var(--text-personalizado);
 }
 
 .forms input::placeholder {
-    color: #6c757d;
-    font-style: italic;
+  color: #6c757d;
+  font-style: italic;
 }
 
 .forms textarea::placeholder {
-    color: var(--text-gray);
-    font-style: italic;
+  color: var(--text-gray);
+  font-style: italic;
 }
-
 
 .forms button,
 .forms Button {
-    background-color: var(--background-normal);
-    color: white;
-    border: none;
-    padding: 14px 32px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    align-self: flex-start;
-    margin-top: 10px;
+  background-color: var(--background-normal);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 
 .forms button:hover,
 .forms Button:hover {
-    background-color: var(--background-normal);
-    transform: translateY(-2px);
+  background-color: var(--background-normal);
+  transform: translateY(-2px);
 }
 
 .forms button:active,
 .forms Button:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 footer {
@@ -354,4 +360,72 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: var(--text-gray);
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.answers label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+#next {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 24px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#next:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+#quiz {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  color: var(--text-light);
 }
