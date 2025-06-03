@@ -429,3 +429,56 @@ input[type="radio"] {
   );
   color: var(--text-light);
 }
+
+#menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu li {
+  margin: 12px 0;
+  list-style: none;
+}
+
+.mobile-menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.mobile-menu a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Responsivo: até 768px, some com links normais e mostra hambúrguer */
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
