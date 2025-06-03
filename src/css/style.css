@@ -277,12 +277,10 @@ form {
 
 .forms input::placeholder {
   color: #6c757d;
-  font-style: italic;
 }
 
 .forms textarea::placeholder {
   color: var(--text-gray);
-  font-style: italic;
 }
 
 .forms button,
