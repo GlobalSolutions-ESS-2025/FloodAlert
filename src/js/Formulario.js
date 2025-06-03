@@ -9,5 +9,5 @@ document.getElementById('contatoForm').addEventListener('submit', (e)=>{
     }
 
 
-    alert('Mensagem enviada com sucesso!');
+    alert('Mensagem enviada com sucesso!!');
 })
